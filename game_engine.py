@@ -1,6 +1,9 @@
 import sys,time,random
 import pickle 
 
+#test
+#adding notes to show changes
+
 def slow_type(t):
     typing_speed = 150 #75 #wpm
     for l in t:
