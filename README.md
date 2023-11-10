@@ -4,9 +4,6 @@
 Mikhail = Chapters 1,3,(5)
 Logan = 2,4
 
-Storyline:
-    Story Line of 2017 Prey.txt
-
 Player:
     HP
     EXP, levels up to more HP
@@ -25,3 +22,7 @@ Objects:
 
 Combat Engine:
     Monster HP - Player Damage = "updated" Monster HP
+
+
+Storyline:
+    Story Line of 2017 Prey.txt
