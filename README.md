@@ -7,11 +7,12 @@ Logan = 2,4
 Player:
     HP
     EXP, levels up to more HP
+    Player Item = x damage
 
 Monster(s):
     HP
     drop EXP
-    Player Item = x damage
+    attack
 
 Items:
     default weapon (can add more...)
