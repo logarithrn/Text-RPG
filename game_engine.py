@@ -1,8 +1,6 @@
-import sys,time,random
+import sys,time,random, os
 import pickle 
-
-#test
-#adding notes to show changes
+import ChapterOne
 
 def slow_type(t):
     typing_speed = 150 #75 #wpm
@@ -61,9 +59,92 @@ def story_flow(story: dict):
 
     curr_page = get_response(page['Options'])
    
+# lbeam - start of classes
+
+# Player Class
+class Player:
+  def __init__(self, name):
+    self.name = name
+    self.maxHP = 100
+    self.HP = self.maxHP
+    self.attack = 10
+    Cystoid_Kills = 0
+    # Etc.
+
+# Enemy Parent Class and Child Classes
+class Typhon:
+  def __init__(self, Typhon_type):
+    self.Typhon_type = Typhon_type
+    self.maxHP = 100
+    self.HP = self.maxHP
+    self.attack = 10
+
+  def take_damage(self, int):
+    self.HP -= int
+
+  def deal_damage(self, int):
+    Player.HP -= int
+
+class Telepath_Human(Typhon):
+  # the Human(s) that Telepaths control.
+  def __init__(self, Typhon_type):
+    self.maxHP = 20
+    self.HP = self.maxHP
+    self.attack = 5
+
+class Cystoid(Typhon):
+  # The smallest of the species, travel in 
+  # packs and explode when near their target.
+  def __init__(self, Typhon_type):
+    self.maxHP = 20
+    self.HP = self.maxHP
+    self.attack = 5
+
+class Mimic(Typhon):
+  # Small spider like figures that move quickly and 
+  # disguise themselves as regular everyday objects.
+  def __init__(self, Typhon_type):
+    self.maxHP = 50
+    self.HP = self.maxHP
+    self.attack = 15
+
+class Phantoms(Typhon):
+  # Taking on the energy from deceased crewmembers, Phantoms are common 
+  # and have an array of extensive abilities.
+  def __init__(self, Typhon_type):
+    self.maxHP = 100
+    self.HP = self.maxHP
+    self.attack = 25
+
+class Poltergeists(Typhon):
+  # The territorial alien that lurks in certain locations and can 
+  # turn invisible, disappearing and appearing at their will.
+  def __init__(self, Typhon_type):
+    self.maxHP = 125
+    self.HP = self.maxHP
+    self.attack = 30
+
+class Telepaths(Typhon):
+  # Mini bosses, the Telepaths can control humans and inflict 
+  # massive damage in single blasts.
+  def __init__(self, Typhon_type):
+    self.maxHP = 200
+    self.HP = self.maxHP
+    self.attack = 50
+
+class Nightmare(Typhon):
+  # The big boss
+  def __init__(self, Typhon_type):
+    self.maxHP = 350
+    self.HP = self.maxHP
+    self.attack = 80
+
 if __name__=='__main__':
-    story = {}
-    with open('chapter1_new.ch', 'rb') as chapter:
+    print('Prey\n')
+    print('Re-Imagined By xxx xxx xxx\n')
+
+    the_player = Player('name')
+    with open('ChapterOne.ch', 'rb') as chapter:
         story = pickle.load(chapter)
 
     story_flow(story)
