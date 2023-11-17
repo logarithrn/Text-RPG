@@ -30,11 +30,11 @@ Storyline:
     Story Line of 2017 Prey.txt
 
 Chapter 1:
-    
+    paragraphs 1,2,3
 Chapter 2:
-
+    parapraphs 4,5 
 Chapter 3:
-
+    paragraphs 6,7
 Chapter 4:
 
 Chapter 5:
