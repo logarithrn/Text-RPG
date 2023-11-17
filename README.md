@@ -1,8 +1,9 @@
 # Text-RPG
 
 
-Mikhail = Chapters 1,3,(5)
-Logan = 2,4
+Mikhail = Chapter 1
+Chass = Chapter 2
+Logan = Chapter 3
 
 # hiHello
 Player:
@@ -43,11 +44,11 @@ Storyline:
     Story Line of 2017 Prey.txt
 
 Chapter 1:
-
+    paragraphs 1,2,3
 Chapter 2:
-
+    parapraphs 4,5 
 Chapter 3:
-
+    paragraphs 6,7
 Chapter 4:
 
 Chapter 5:
