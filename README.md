@@ -29,7 +29,6 @@ Combat Engine:
 Storyline:
     Story Line of 2017 Prey.txt
 
-Mikhail
 Chapter 1:
     
 Chapter 2:
