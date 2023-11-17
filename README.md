@@ -1,8 +1,9 @@
 # Text-RPG
 
 
-Mikhail = Chapters 1,3,(5)
-Logan = 2,4
+Mikhail = Chapter 1
+Chass = Chapter 2
+Logan = Chapter 3
 
 Player:
     HP
@@ -28,8 +29,9 @@ Combat Engine:
 Storyline:
     Story Line of 2017 Prey.txt
 
+Mikhail
 Chapter 1:
-
+    
 Chapter 2:
 
 Chapter 3:
