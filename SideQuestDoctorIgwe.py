@@ -1,23 +1,25 @@
+# This story line follows the side quest of Doctor Igwe
+# Author: Logan Beam
+# Date: Nov 17, 2023
+
 import pickle
 story = {}
-##with open('chapter1.ch', 'rb') as chapter:
-##    story = pickle.load(chapter)
+
 story[0] = {
     'Text': [
-        "Welcome to your first text adventure game! The Cave of Wonders!!!",
-        "Are you ready to begin the adventure?  If you don't know what to do just hit the Enter key...",
-        "Would you like to continue? Yes/No?"
+        "You enter the Cargo Bay.",
+        "You notice a cargo container floating by itself a little ways out from the station. As you get closer, a call comes through from its occupant.",
+        "What do you do?"
     ],
     'Options': [
-        ("Yes", 1),
-        ("No", 99)
+        ("Answer the call", 1),
+        ("Ignore the call", 100)
     ]
 }
 story[1] = {
     'Text': [
-        "While on a hike, you find yourself in front of a very large cave.",
-        "You have been on this hike before but never remembered a cave.",
-        "What do you want to do?"
+        "This is Dr. Dayo Igwe. I am broadcasting to all contacts in proximity please whoever is out there listen to me. Oxygen is low...and I have no spacesuit. An accident in cargo bay force me to seal myself inside this container but I have no way to dock with the station from in here.",
+        "You take notice that there are five shipping containers. ",
     ],
     'Options': [
         ("Enter the cave", 2),
@@ -72,9 +74,7 @@ story[5] = {
     }
 story[99] = {
     'Text': [
-        "You have indicated you want to end the game...",
-        "Is this correct?",
-        "Or would you like to continue?"
+        ""
     ],
     'Options': [
         ("Yes", 100),
@@ -83,11 +83,11 @@ story[99] = {
     }
 story[100] = {
     'Text': [
-        "Have a good day!",
-        "Exiting..."
+         "You decide to ignore the call.",
+        "Then walk out of the Cargo Bay."
     ],
     'Options': []
     }
 
-with open('chapter1.ch', 'wb') as chapter:
+with open('SideQuestDoctorIgwe.ch', 'wb') as chapter:
     pickle.dump(story, chapter)

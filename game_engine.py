@@ -1,6 +1,5 @@
 import sys,time,random, os
 import pickle 
-import ChapterOne
 
 def slow_type(t):
     typing_speed = 150 #75 #wpm
@@ -145,6 +144,14 @@ if __name__=='__main__':
 
     the_player = Player('name')
     with open('ChapterOne.ch', 'rb') as chapter:
+        story = pickle.load(chapter)
+
+    the_player = Player('name')
+    with open('ChapterTwo.ch', 'rb') as chapter:
+        story = pickle.load(chapter)
+
+    the_player = Player('name')
+    with open('SideQuestDoctorIgwe.ch', 'rb') as chapter:
         story = pickle.load(chapter)
 
     story_flow(story)
