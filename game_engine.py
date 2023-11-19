@@ -58,7 +58,7 @@ def story_flow(story: dict):
 
     curr_page = get_response(page['Options'])
    
-# lbeam - start of classes
+#classes
 
 # Player Class
 class Player:
