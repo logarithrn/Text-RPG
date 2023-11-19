@@ -89,5 +89,5 @@ story[100] = {
     'Options': []
     }
 
-with open('SideQuestDoctorIgwe.ch', 'wb') as chapter:
+with open('SQDrIgwe.ch', 'wb') as chapter:
     pickle.dump(story, chapter)
