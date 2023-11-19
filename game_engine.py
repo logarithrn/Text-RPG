@@ -144,7 +144,7 @@ if __name__=='__main__':
     print('Re-Imagined By xxx xxx xxx\n')
 
     the_player = Player('name')
-    with open('ChapterOne.ch', 'rb') as chapter:
+    with open('SideQuestDoctorIgwe.ch', 'rb') as chapter:
         story = pickle.load(chapter)
 
     story_flow(story)
