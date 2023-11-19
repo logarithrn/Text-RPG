@@ -148,3 +148,103 @@ if __name__=='__main__':
         story = pickle.load(chapter)
 
     story_flow(story)
+
+    #Adding assigned classes (Mikhail)
+    ##Adding Class Item
+    class Item:
+
+      """
+      A Class representing the items in the game.
+
+      Attributes:
+      - name
+      - type
+      - effect
+      - description
+      - quantity
+      - equip
+
+      """
+
+      def __init__(self, name, type, effect, description, quantity=1, equip="no"):
+        """
+        Constructor for the Item Class.
+
+        Parameters:
+
+        name(str): name of the item.
+        type(str): type of the item(eg. weapon, consumption).
+        effect(str): the effect on the character(eg. equip, heal).
+        description(str): a short description of the item.
+        quantity(int, optional): The quantity of the item, default at 1.
+        equip(boolean): If the item is an equippable item, default at no.
+
+        """
+
+        self.name = name
+        self.type = type
+        self.effect = effect
+        self.description = description
+        self.quantity = quantity
+        self.equip = equip
+
+        def use(self):
+          """
+          Simulate using the item
+          """
+        print(f"You used {self.name}.")
+
+    def display_info(self):
+        """
+        Display information about the item.
+        """
+        print(f"{self.name} - {self.description} (Quantity: {self.quantity})")
+
+        ## Adding Class Inventory
+
+        class Inventory:
+          """
+          A Class for representing the expandable inventories used in the game.
+
+          Attributes:
+          
+          - name
+          - capacity
+          - items
+
+          """
+
+          def __init__(self, name, capacity, items):
+            """
+            Constructor for the Class inventory
+
+            Parameters: 
+
+            Name(str): The name of the Inventory Class.
+            Capacity(int): The maximum capacity of the inventory class.
+            Items(list): A list of the stored items.
+
+            """
+
+            self.name = name
+            self.capacity = capacity
+            self.items = []
+
+            def add_item(self, item):
+              """
+              Add an item to the bag.
+
+              Parameters:
+              - item: The item to be added to the bag.
+              """
+              if len(self.items) < self.capacity:
+                self.items.append(item)
+                print(f"{item.name} added to the bag.")
+              else:
+                print("The bag is full. Cannot add more items.")
+
+    def display_contents(self):
+        """
+        Display the contents of the bag.
+        """
+        print(f"Bag Contents: {', '.join(item.name for item in self.items)}")
