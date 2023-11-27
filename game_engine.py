@@ -77,13 +77,20 @@ def story_flow(story: dict):
 
 # Player Class
 class Player:
-  def __init__(self, name):
-    self.name = name
-    self.maxHP = 100
-    self.HP = self.maxHP
-    self.attack = 10
-    Cystoid_Kills = 0
-    # Etc.
+    def __init__(self, name):
+        self.name = name
+        self.maxHP = 100
+        self.HP = self.maxHP
+        self.attack = 10
+        Cystoid_Kills = 0
+        # Etc.
+
+    def gain_exp(self, exp):
+        self.exp += exp
+        if self.exp >= 100:
+            self.exp -= 100
+            self.level += 1
+            self.health += 20
 
 # Enemy Parent Class and Child Classes
 class Typhon:
