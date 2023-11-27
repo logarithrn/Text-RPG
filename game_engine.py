@@ -1,6 +1,5 @@
 import sys,time,random, os
 import pickle 
-import ChapterOne
 
 def slow_type(t):
     typing_speed = 150 #75 #wpm
@@ -73,7 +72,9 @@ def story_flow(story: dict):
 
     return {'next_page': curr_page, 'player_title': player_title}
 
-# lbeam - start of classes
+    curr_page = get_response(page['Options'])
+   
+#classes
 
 # Player Class
 class Player:
@@ -264,3 +265,13 @@ class Inventory:
         Display the contents of the bag.
         """
         print(f"Bag Contents: {', '.join(item.name for item in self.items)}")
+        
+    the_player = Player('name')
+    with open('ChapterTwo.ch', 'rb') as chapter:
+        story = pickle.load(chapter)
+
+    the_player = Player('name')
+    with open('SQDrIgwe.ch', 'rb') as chapter:
+        story = pickle.load(chapter)
+
+    story_flow(story)
