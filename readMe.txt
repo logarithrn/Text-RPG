@@ -30,7 +30,6 @@ Objects:
 
 Combat Engine:
     Monster HP - Player Damage = "updated" Monster HP
-#hiHello
 
 
 Storyline:
